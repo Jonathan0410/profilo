@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan A - Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-image: url(images/background.avif);
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        .profile-header {
+            background: url('your-background-image.jpg') no-repeat center center/cover;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .profile-header h1 {
+            font-size: 48px;
+            font-weight: bold;
+            text-transform: uppercase;
+            background: -webkit-linear-gradient(45deg, #fff, #ff9800);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .profile-header p {
+            font-size: 20px;
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+
+        .btn-container a {
+            background: linear-gradient(90deg, #03dac6, #ff0266);
+            padding: 12px 25px;
+            border-radius: 30px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+            margin: 5px;
+            display: inline-block;
+        }
+
+        .btn-container a:hover {
+            transform: scale(1.1);
+            background: linear-gradient(90deg, #ff0266, #03dac6);
+        }
+
+        .projects {
+            margin: 50px auto;
+            max-width: 900px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .projects:hover {
+            transform: scale(1.05);
+        }
+
+        .project-item {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            margin-bottom: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+        }
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-left: 20px;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-header">
+        <div class="profile-info">
+            <h1>Jonathan A</h1>
+            <p>UiPath(RPA) | Front-End Developer</p>
+            <div class="btn-container">
+                <a href="https://www.linkedin.com/in/jonathan-a-02848a227/">LinkedIn</a>
+                <a href="mailto:jonathanlucky0402@gmail.com">Contact Me</a>
+            </div>
+        </div>
+        <!--<div class="profile-image">
+            <img src="images/jonathan.jpg" alt="Jonathan A">
+        </div>-->
+    </div>
+
+    <section class="projects">
+        <h2>Projects</h2>
+        <div class="project-item"> 
+            <h3>Gmail File Downloader (UiPath)</h3>
+            <p>Automated file downloads from Gmail and sorted them using a taxonomy model.</p>
+        </div>
+        <div class="project-item"> 
+            <h3>Student Internal Marks Calculator</h3>
+            <p>Developed an automation tool using UiPath to compute students' internal marks accurately and generate detailed PDF reports.</p>
+        </div>
+        <div class="project-item"> 
+            <h3>IRCTC Ticket Booking Automation</h3>
+            <p>Created an RPA bot that simplifies ticket booking for uneducated users, minimizing errors and ensuring efficiency.</p>
+        </div>
+        <div class="project-item"> 
+            <h3>Automated College Portal</h3>
+            <p>Built an automated access system for college portals using RPA, allowing students to access their information seamlessly.</p>
+        </div>
+        <div class="project-item"> 
+            <h3>College Conference Website</h3>
+            <p>Developed a dynamic conference management website for my college, streamlining paper submission, scheduling, and event coordination.</p>
+        </div>
+    </section>
+</body>
+</html>
